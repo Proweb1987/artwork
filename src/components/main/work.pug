@@ -1,0 +1,30 @@
+section.section__work 
+    h2.section__work-title work showcase
+    .section__work-content 
+        ul.section__work-list 
+            -var item = ['service','blog','help','show']
+            each i in item 
+                li.secton__work-li 
+                    a.section__work-btn(href="#")= i 
+        .section__work-drop 
+            p.section__work-text our special
+            span.section__work-span.icon-row
+    .section__work-box
+        .section__work-item 
+            img.section__work-img(src=require('@/images/work-img1.jpg'), alt="")
+        .section__work-item 
+            img.section__work-img(src=require('@/images/work-img2.jpg'), alt="")
+        .section__work-item 
+            img.section__work-img(src=require('@/images/work-img3.jpg'), alt="")
+        .section__work-item 
+            img.section__work-img(src=require('@/images/work-img4.jpg'), alt="")
+        .section__work-item 
+            img.section__work-img(src=require('@/images/work-img5.jpg'), alt="")
+        .section__work-item 
+            img.section__work-img(src=require('@/images/work-img6.jpg'), alt="")
+    a.work__btn(href="#") view
+    .section__work-label 
+        -var logo = ['label1.jpg','label2.jpg','label3.jpg','label4.jpg','label5.jpeg','label6.jpg']
+        each sign in logo 
+            img(src=require('@/images/' + sign), alt="")
+        

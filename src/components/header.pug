@@ -1,0 +1,10 @@
+header.header
+    .header__nav
+        .bg
+        span.header__nav-span.icon-menu
+        img(src=require('@/images/nav-logo.png'), alt="").nav__img
+        ul.header__nav-list
+            -var btns = ['Work','About','Blog',"Contact"]
+            each btn in btns 
+                li.header__nav-li 
+                    a(href="#").header__nav-btn= btn 

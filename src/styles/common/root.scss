@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &::before,
+    &::after {
+        font-family: 'FontAwesome';
+    }
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: 'Montserrat';
+}
+
+.icon {
+    &-menu::before {
+        content: '\f0c9';
+        font-weight: 300;
+    }
+    &-row::before {
+        content: '\f150';
+        font-weight: 300;
+    }
+    &-adress::before {
+        content: '\f5a0';
+        font-weight: 300;
+    }
+    &-phone::before {
+     content: '\f3cd';
+     font-weight: 300;
+    }
+    &-email::before {
+     content: '\f0e0';
+     font-weight: 300;
+    }
+    &-facebook::before {
+        content: '\f09a';
+        
+    }
+    &-twiter::before {
+        content: '\f099';
+       
+    }
+    &-instagram::before {
+        content: '\f16d';
+        
+    }
+ 
+}
